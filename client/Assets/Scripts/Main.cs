@@ -1,4 +1,4 @@
-using System;
+锘縰sing System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +14,8 @@ public class Main : MonoBehaviour
     }
     void Start()
     {
+        float bl = ((float)Screen.width) / Screen.height;
+        Screen.SetResolution((int)(1920*bl),1920,false);
         DispEvent("gamebegin");
     }
     static Dictionary<string, List<registfun>> evs = new();
@@ -30,7 +32,7 @@ public class Main : MonoBehaviour
                     return p;
                 }
             }
-            Debug.LogError("没有处理消息" + ev);
+            Debug.LogError("娌℃湁澶勭悊娑堟伅" + ev);
             return null;
         }
         else
@@ -42,7 +44,7 @@ public class Main : MonoBehaviour
     {
         if (evs.ContainsKey(ev))
         {
-            //Debug.LogError("已经注册消息" + ev);
+            //Debug.LogError("宸茬粡娉ㄥ唽娑堟伅" + ev);
         }
         else
         {

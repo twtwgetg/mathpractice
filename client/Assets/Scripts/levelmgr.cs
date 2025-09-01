@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,10 +21,10 @@ public class levelmgr : MonoBehaviour
         level = 1;
     } 
     /**
-     * »ñÈ¡¹Ø¿¨Ê±¼ä
-     * @param level ¹Ø¿¨
-     * @return Ê±¼ä
-     * ¹Ø¿¨Ê±¼ä1¼¶100Ãë
+     * è·å–å…³å¡æ—¶é—´
+     * @param level å…³å¡
+     * @return æ—¶é—´
+     * å…³å¡æ—¶é—´1çº§100ç§’
      * 
      */
     internal static float getTimeAll(int level)
@@ -33,7 +33,7 @@ public class levelmgr : MonoBehaviour
         return Mathf.Lerp(30, 100, t);
     }
     /**
-     * »ñÈ¡¿¨Æ¬×îĞ¡Öµ
+     * è·å–å¡ç‰‡æœ€å°å€¼
      * */
     internal static int getMin(int level)
     {
@@ -50,7 +50,7 @@ public class levelmgr : MonoBehaviour
         }
     }
     /**
-     * »ñÈ¡¿¨Æ¬ÊıÁ¿
+     * è·å–å¡ç‰‡æ•°é‡
      * */
     internal static int getCount(int level)
     {

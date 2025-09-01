@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -9,11 +9,11 @@ public class frmbaseeditor : Editor
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-        if (GUILayout.Button("ÏÔÊ¾"))
+        if (GUILayout.Button("æ˜¾ç¤º"))
         {
             frm.show();
         }
-        if (GUILayout.Button("Òş²Ø"))
+        if (GUILayout.Button("éšè—"))
         {
             frm.hide();
         }
