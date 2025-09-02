@@ -62,6 +62,16 @@ public class frm_tools : frmbase
             curr = result;
             return null;
         });
+        Main.RegistEvent("event_plus", (x) =>
+        {
+            curr = practice;
+            return null;
+        });
+        Main.RegistEvent("event_subs", (x) =>
+        {
+            curr = practice;
+            return null;
+        });
     }
     // Start is called before the first frame update
     void Start()

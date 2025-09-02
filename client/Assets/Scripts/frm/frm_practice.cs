@@ -192,7 +192,7 @@ public class frm_practice : frmbase
         }
 
         // 更新题目显示
-        title.text = $"第{currentQuestion + 1}题: {questionText} = ?";
+        title.text = $"{questionText} = ?";
         currentAnswer = "";
         isProcessing = false;
         currentQuestion++;
