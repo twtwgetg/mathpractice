@@ -34,20 +34,20 @@ public class frm_chengjiu : frmbase
         // 更新UI显示
         if (additionAccuracyText != null)
         {
-            additionAccuracyText.text = $"{additionAccuracy}%";//({correctAddition}/{totalAddition})";
+            additionAccuracyText.text = $"{(int)additionAccuracy}%";//({correctAddition}/{totalAddition})";
         }
         
         if (subtractionAccuracyText != null)
         {
-            subtractionAccuracyText.text = $"{subtractionAccuracy}%";// ({correctSubtraction}/{totalSubtraction})";
+            subtractionAccuracyText.text = $"{(int)subtractionAccuracy}%";// ({correctSubtraction}/{totalSubtraction})";
         }
         
         if (overallAccuracyText != null)
         {
-            overallAccuracyText.text = $"{overallAccuracy}%";// ({correctAll}/{totalAll})";
+            overallAccuracyText.text = $"{(int)overallAccuracy}%";// ({correctAll}/{totalAll})";
         }
         details.text = $"已答题:{totalAddition+totalSubtraction},正确:{correctAddition+correctSubtraction}";
-        mainall.text = $"{overallAccuracy}%";
+        mainall.text = $"{(int)overallAccuracy}%";
         Debug.Log($"显示统计数据 - 加法: {additionAccuracy:F1}%, 减法: {subtractionAccuracy:F1}%, 总体: {overallAccuracy:F1}%");
 
 
